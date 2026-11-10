@@ -1,0 +1,94 @@
+TAP version 13
+# Subtest: CT01 - dois jogadores iniciam com quatro pecas na base
+ok 1 - CT01 - dois jogadores iniciam com quatro pecas na base
+  ---
+  duration_ms: 2.4387
+  type: 'test'
+  ...
+# Subtest: CT02 - somente seis retira uma peca da base e concede outra jogada
+ok 2 - CT02 - somente seis retira uma peca da base e concede outra jogada
+  ---
+  duration_ms: 0.7775
+  type: 'test'
+  ...
+# Subtest: CT03 - dado invalido e jogador fora da vez nao alteram estado
+ok 3 - CT03 - dado invalido e jogador fora da vez nao alteram estado
+  ---
+  duration_ms: 0.7133
+  type: 'test'
+  ...
+# Subtest: CT04 - precisa lancar antes de mover e nao pode lancar duas vezes
+ok 4 - CT04 - precisa lancar antes de mover e nao pode lancar duas vezes
+  ---
+  duration_ms: 0.32
+  type: 'test'
+  ...
+# Subtest: CT05 - movimento comum avanca e alterna a vez
+ok 5 - CT05 - movimento comum avanca e alterna a vez
+  ---
+  duration_ms: 0.2344
+  type: 'test'
+  ...
+# Subtest: CT06 - terceiro seis consecutivo perde a vez sem mover
+ok 6 - CT06 - terceiro seis consecutivo perde a vez sem mover
+  ---
+  duration_ms: 0.339
+  type: 'test'
+  ...
+# Subtest: CT07 - duas pecas formam barreira e impedem terceira na mesma casa
+ok 7 - CT07 - duas pecas formam barreira e impedem terceira na mesma casa
+  ---
+  duration_ms: 0.3026
+  type: 'test'
+  ...
+# Subtest: CT08 - captura adversario em casa nao segura e devolve a base
+ok 8 - CT08 - captura adversario em casa nao segura e devolve a base
+  ---
+  duration_ms: 0.3551
+  type: 'test'
+  ...
+# Subtest: CT09 - casa segura permite coexistencia sem captura
+ok 9 - CT09 - casa segura permite coexistencia sem captura
+  ---
+  duration_ms: 1.1956
+  type: 'test'
+  ...
+# Subtest: CT10 - chegada exige valor exato e nao permite ultrapassar 57
+ok 10 - CT10 - chegada exige valor exato e nao permite ultrapassar 57
+  ---
+  duration_ms: 0.6119
+  type: 'test'
+  ...
+# Subtest: CT11 - consulta retorna copia independente
+ok 11 - CT11 - consulta retorna copia independente
+  ---
+  duration_ms: 0.1645
+  type: 'test'
+  ...
+# Subtest: CT12 - quatro pecas na chegada vencem e bloqueiam novas acoes
+ok 12 - CT12 - quatro pecas na chegada vencem e bloqueiam novas acoes
+  ---
+  duration_ms: 1.2988
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 155.7808
+# start of coverage report
+# --------------------------------------------------------------
+# file          | line % | branch % | funcs % | uncovered lines
+# --------------------------------------------------------------
+# src           |        |          |         | 
+#  ludo.js      | 100.00 |    98.53 |  100.00 | 
+# test          |        |          |         | 
+#  ludo.test.js | 100.00 |   100.00 |  100.00 | 
+# --------------------------------------------------------------
+# all files     | 100.00 |    99.00 |  100.00 | 
+# --------------------------------------------------------------
+# end of coverage report
